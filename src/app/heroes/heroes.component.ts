@@ -12,7 +12,6 @@ import { Router } from '@angular/router'
 export class HeroesComponent implements OnInit {
 
   constructor(private router:Router,private heroService:HeroService) { }
-  
 
   _hero={} as Hero;
   heroes:Array<Hero>;

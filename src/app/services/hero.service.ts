@@ -19,7 +19,7 @@ export class HeroService {
     heroes.splice(index,1);
   }
 
-  
+
   Add(heroes:Array<Hero>,_hero={} as Hero,router:Router){
     let hero ={} as Hero;
     hero.id=_hero.id;
@@ -27,7 +27,7 @@ export class HeroService {
     hero.lastName=_hero.lastName;
     console.log(_hero.id+"/"+_hero.firstName+"/"+_hero.lastName);
     heroes.push(hero);
-
+    
     localStorage.setItem('array',JSON.stringify(heroes));
     
     router.navigateByUrl('/home');
