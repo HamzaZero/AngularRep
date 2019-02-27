@@ -1,0 +1,55 @@
+
+  <h2>List of heroes : </h2>
+  <div class="grid grid-pad">
+      <a *ngFor="let hero of heroes; let i =index" >
+        <div class="row">
+          <div style="padding: 20px;
+            text-align: center;
+            color: #eee;
+            max-height: 120px;
+            min-width: 120px;
+            background-color: #607D8B;
+            border-width:2px;
+            border-color:black;
+            border-style: solid;" class="col-lg">
+            <span>{{hero.id}} </span></div>
+            <div style="padding: 20px;
+            text-align: center;
+            color: #eee;
+            max-height: 120px;
+            min-width: 120px;
+            background-color: #607D8B;
+            border-width:2px;
+            border-color:black;
+            border-style: solid;" class="col-lg">
+            <span>{{hero.firstName}} </span></div>
+            <div style="padding: 20px;
+            text-align: center;
+            color: #eee;
+            max-height: 120px;
+            min-width: 120px;
+            background-color: #607D8B;
+            border-width:2px;
+            border-color:black;
+            border-style:solid;" class="col-lg">
+              <span> {{hero.lastName}}</span>
+            </div>
+            <div style="padding: 20px;
+            text-align: center;
+            color: #eee;
+            max-height: 120px;
+            min-width: 120px;
+            background-color: #607D8B;
+            border-width:2px;
+            border-color:black;
+            border-style: solid;" class="col-lg">
+              <input value="Update" type="button" class="btn btn-success">
+              <input value="Delete" type="button" class="btn btn-danger"  (click)="onClickDelete(i)">
+            </div>
+         </div>
+      </a>
+      <br>
+      <div style="text-align: right">
+      <input value="Add New Hero" type="button" class="btn btn-primary" [routerLink]="['/heroes']" >
+      </div>
+      </div>

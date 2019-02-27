@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="form-group">
+    <label>ID : </label>
+    <input type="text" class="form-control" [(ngModel)]="_hero.id">
+  </div>
+  <div class="form-group">
+    <label>First Name : </label>
+    <input type="text" class="form-control" [(ngModel)]="_hero.firstName">
+  </div>
+  <div class="form-group">
+    <label>Last Name : </label>
+    <input type="text" class="form-control" [(ngModel)]="_hero.lastName">
+  </div>
+  <input value="Add" type="button" class="btn btn-primary" (click)="onClickAdd()">
+  <input value="Cancel" type="button" class="btn btn-danger" [routerLink]="['/home']">
+</div>
