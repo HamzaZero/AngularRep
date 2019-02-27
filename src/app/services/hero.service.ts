@@ -18,8 +18,8 @@ export class HeroService {
   Delete(index,heroes:Array<Hero>){
     heroes.splice(index,1);
   }
-  ;
-  ;
+
+  
   Add(heroes:Array<Hero>,_hero={} as Hero,router:Router){
     let hero ={} as Hero;
     hero.id=_hero.id;
