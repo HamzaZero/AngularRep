@@ -1,6 +1,6 @@
 
   <h2>List of heroes : </h2>
-  <div class="grid grid-pad">
+  <div class="container">
       <a *ngFor="let hero of heroes; let i =index" >
         <div class="row">
           <div style="padding: 20px;
@@ -43,7 +43,7 @@
             border-width:2px;
             border-color:black; 
             border-style: solid;" class="col-lg">
-              <input value="Update" type="button" class="btn btn-success" [routerLink]="['/heroes/']">
+              <input value="Update" type="button" class="btn btn-success" [routerLink]="['/heroes',hero.id]">
               <input value="Delete" type="button" class="btn btn-danger"  (click)="onClickDelete(i)">
             </div>
          </div>
