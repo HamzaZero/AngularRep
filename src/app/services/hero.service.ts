@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Hero } from '../hero'
 import { HeroesComponent } from '../heroes/heroes.component';
 import { Router } from '@angular/router'
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +35,15 @@ export class HeroService {
   }
   
   Update(heroes:Array<Hero>,hero:Hero,index){
-      
+    /*let her ={} as Hero;
+    if(heroes.findIndex(index)===index)
+    {
+      her.firstName=hero.firstName;
+      her.lastName=hero.lastName;
+      console.log(_hero.id+"/"+_hero.firstName+"/"+_hero.lastName);
+      heroes.push(hero);
+    }*/
+        
   }
 
 }
