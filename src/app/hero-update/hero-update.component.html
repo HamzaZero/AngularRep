@@ -1,7 +1,7 @@
 <div class="container">
   <div class="form-group">
     <label>ID : </label>
-    <input type="text" class="form-control" [(ngModel)]="_hero.id">
+    <input type="text" class="form-control" [(ngModel)]="_hero.id" [disabled]="true">
   </div>
   <div class="form-group">
     <label>First Name : </label>
@@ -11,7 +11,6 @@
     <label>Last Name : </label>
     <input type="text" class="form-control" [(ngModel)]="_hero.lastName">
   </div>
-  <input value="Add" type="button" class="btn btn-primary" (click)="onClickAdd()">
   <input value="Update" type="button" class="btn btn-success" (click)="onClickUpdate()">
   <input value="Cancel" type="button" class="btn btn-danger" [routerLink]="['/home']">
 </div>

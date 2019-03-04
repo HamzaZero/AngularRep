@@ -37,22 +37,20 @@ export class HeroService {
     router.navigateByUrl('/home');
   }
   
-  Update(heroes:Array<Hero>,hero:Hero,id:number,router:Router,index:number){
-    //let a = heroes.find(x => x.id === 5);
-    //console.log("update methode hero id : "+id);
+  Update(heroes:Array<Hero>,hero:Hero,id:number,router:Router){
     let her ={} as Hero;
-      //let a =heroes.slice(index,1);
-     
-      //her.id=id;
-     // console.log(id);
-     /* her.firstName=hero.firstName;
+
+      console.log(id);
+      her.id=+id;
+      her.firstName=hero.firstName;
       her.lastName=hero.lastName;
       console.log(her.id+"/"+her.firstName+"/"+her.lastName);
-      heroes.push(her);
+      hero=her;
+      //heroes.push(hero);
 
       localStorage.setItem('array',JSON.stringify(heroes));
     
-    router.navigateByUrl('/home');*/
+    router.navigateByUrl('/home');
         
   }
 

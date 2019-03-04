@@ -27,14 +27,5 @@ export class HeroesComponent implements OnInit {
 
   }
   
-  onClickAdd(){
-    this.heroService.Add(this.heroes,this._hero,this.router);
-  }
-  onClickUpdate(id:number,index:number){
-    id=5;
-  let a = this.heroes.find(x => x.id === id);
-   // index=<number>this.route.params['index'];
-    console.log(id);
-    this.heroService.Update(this.heroes,this._hero,id,this.router,index)
-  }
+  
 }

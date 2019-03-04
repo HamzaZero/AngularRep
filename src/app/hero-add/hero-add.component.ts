@@ -21,7 +21,13 @@ export class HeroAddComponent implements OnInit {
   }
 
   onClickAdd(){
-    this.heroService.Add(this.heroes,this._hero,this.router);
+    if(window.confirm('Are you sure you want to delete this Hero ?'))
+    {
+      this.heroService.Add(this.heroes,this._hero,this.router);
+    }
+    else
+        return;
+    
   }
   
 }
