@@ -15,7 +15,6 @@ export class HeroUpdateComponent implements OnInit {
   _hero={} as Hero;
   heroes:Array<Hero>;
   id:number;
-  i:number;
   ngOnInit() {
     this.heroes=this.heroService.getHeroes();
      
@@ -32,7 +31,6 @@ export class HeroUpdateComponent implements OnInit {
     }
     else
         return;
-      
     }
 
   
