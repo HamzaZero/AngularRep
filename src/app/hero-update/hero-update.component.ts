@@ -22,11 +22,10 @@ export class HeroUpdateComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(param =>{
       this.id = +param.get('id');
       this._hero = this.heroes.find(hero => hero.id  === this.id);
-      this.i = this.heroes.findIndex(hero => hero.id  === this.id);
     });
   }
     onClickUpdate(id:number){
-      if(window.confirm('Are you sure you want to update the data of this Hero ?'))
+      if(window.confirm('Are you sure you want to update the informations of this Hero ?'))
     {
       id=this.id;
       this.heroService.Update(this.heroes,this._hero,id,this.router)
