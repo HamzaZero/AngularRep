@@ -43,13 +43,13 @@
             border-width:2px;
             border-color:black; 
             border-style: solid;" class="col-lg">
-              <input value="Update" type="button" class="btn btn-success" [routerLink]="['/heroes',hero.id]">
+              <input value="Update" type="button" class="btn btn-success" [routerLink]="['/heroes/update',hero.id]">
               <input value="Delete" type="button" class="btn btn-danger"  (click)="onClickDelete(i)">
             </div>
          </div>
       </a>
       <br>
       <div style="text-align: right">
-      <input value="Add New Hero" type="button" class="btn btn-primary" [routerLink]="['/heroes']" >
+      <input value="Add New Hero" type="button" class="btn btn-primary" [routerLink]="['/heroes/add']" >
       </div>
       </div>

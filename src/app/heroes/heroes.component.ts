@@ -11,7 +11,7 @@ import {ActivatedRoute, Router } from '@angular/router'
 })
 export class HeroesComponent implements OnInit {
 
-  constructor(private router:Router,private heroService:HeroService,private route:ActivatedRoute) { }
+  constructor(private router:Router,private heroService:HeroService,private activatedRoute:ActivatedRoute) { }
 
   _hero={} as Hero;
   heroes:Array<Hero>;
@@ -20,12 +20,10 @@ export class HeroesComponent implements OnInit {
     this.heroes=this.heroService.getHeroes();
 
     
-    this.route.paramMap.subscribe(param =>{
-      const id = +param.get('id');
-      if(id !==-1){
-      this._hero = this.heroes.find(hero => hero.id  == id);
-    }
-    });
+      //this.activatedRoute.paramMap.subscribe(param =>{
+      //const id = +param.get('id');
+      //this._hero = this.heroes.find(hero => hero.id  == id);
+    //});
 
   }
   
@@ -38,6 +36,5 @@ export class HeroesComponent implements OnInit {
    // index=<number>this.route.params['index'];
     console.log(id);
     this.heroService.Update(this.heroes,this._hero,id,this.router,index)
-
   }
 }
