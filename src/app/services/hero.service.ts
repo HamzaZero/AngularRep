@@ -36,7 +36,7 @@ export class HeroService {
     
     router.navigateByUrl('/home');
   }
-  
+   
   Update(heroes:Array<Hero>,hero:Hero,id:number,router:Router){
     let her ={} as Hero;
 

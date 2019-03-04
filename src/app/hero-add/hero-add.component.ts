@@ -18,7 +18,7 @@ export class HeroAddComponent implements OnInit {
   ngOnInit() {
     this.heroes=this.heroService.getHeroes();
 
-  }
+  } 
 
   onClickAdd(){
     if(window.confirm('Are you sure you want to delete this Hero ?'))

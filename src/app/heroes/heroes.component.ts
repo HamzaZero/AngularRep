@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
       //this.activatedRoute.paramMap.subscribe(param =>{
       //const id = +param.get('id');
       //this._hero = this.heroes.find(hero => hero.id  == id);
-    //});
+    //}); 
 
   }
   

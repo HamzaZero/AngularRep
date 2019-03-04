@@ -18,7 +18,7 @@ export class HeroUpdateComponent implements OnInit {
   i:number;
   ngOnInit() {
     this.heroes=this.heroService.getHeroes();
-    
+     
     this.activatedRoute.paramMap.subscribe(param =>{
       this.id = +param.get('id');
       this._hero = this.heroes.find(hero => hero.id  === this.id);
