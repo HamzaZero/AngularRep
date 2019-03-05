@@ -32,7 +32,4 @@ export class HeroUpdateComponent implements OnInit {
     else
         return;
     }
-
-  
-
 }
